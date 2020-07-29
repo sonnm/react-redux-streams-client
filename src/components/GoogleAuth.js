@@ -49,7 +49,6 @@ class GoogleAuth extends React.Component {
         <i className="google icon" />
         Sign In with Google
       </button>
-
     );
   }
 
