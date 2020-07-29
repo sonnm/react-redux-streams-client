@@ -15,6 +15,7 @@ const App = () => {
     <div className="ui container">
       <BrowserRouter>
         {process.env.REACT_APP_API_ENDPOINT}
+        {process.env.REACT_APP_API_ENDPOINT}
         <Header />
         <Route path="/" exact component={StreamList} />
         <Route path="/streams/new" exact component={StreamCreate} />
