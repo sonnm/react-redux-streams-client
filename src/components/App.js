@@ -14,11 +14,11 @@ const App = () => {
       NODE_ENV: process.env.NODE_ENV,
       REACT_APP_API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT,
       VERCEL_URL: process.env.VERCEL_URL,
+      ENVIRONMENT: process.env.ENVIRONMENT,
     });
   }, []);
 
   return (
-
     <div className="ui container">
       <BrowserRouter>
         <Header />
