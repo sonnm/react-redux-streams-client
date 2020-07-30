@@ -9,14 +9,16 @@ import Header from './Header';
 
 const App = () => {
   useEffect(() => {
+    console.log({
+      TEST: process.env.TEST,
+      NODE_ENV: process.env.NODE_ENV,
+      REACT_APP_API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT,
+    });
   }, []);
 
   return (
     <div className="ui container">
       <BrowserRouter>
-        {process.env.TEST}
-        {process.env.NODE_ENV}
-        {process.env.REACT_APP_API_ENDPOINT}
         <Header />
         <Route path="/" exact component={StreamList} />
         <Route path="/streams/new" exact component={StreamCreate} />
