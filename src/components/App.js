@@ -15,6 +15,7 @@ const App = () => {
       REACT_APP_API_ENDPOINT: process.env.REACT_APP_API_ENDPOINT,
       VERCEL_URL: process.env.VERCEL_URL,
       ENVIRONMENT: process.env.ENVIRONMENT,
+      REACT_APP_ENV: process.env.REACT_APP_ENV,
     });
   }, []);
 
